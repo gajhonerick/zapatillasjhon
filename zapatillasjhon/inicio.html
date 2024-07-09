@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+    
+        /* Estilos del hero section */
+        .cabez {
+            background-image: url('img/fondorosa.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            width: 100%;
+        }
+    
+        .cabez h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    
+        .cabez p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+    
+        .cabez .btn {
+            display: inline-block;
+            background-color: #a7b812;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+    
+        .cabez .btn:hover {
+            background-color: #746d0e;
+        }
+    
+        /* Estilos de la sección de productos destacados */
+        .productss {
+            padding: 40px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+    
+        .productss h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+    
+        .product {
+            display: inline-block;
+            width: calc(50% - 40px); /* Ajustar el tamaño según sea necesario */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+    
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        .product h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    
+        .product p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    
+        .product .btn {
+            display: inline-block;
+            background-color: #999708;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+    
+        .product .btn:hover {
+            background-color: #282928;
+        }
+    
+        @media (max-width: 768px) {
+            
+    
+            .cabez h2 {
+                font-size: 2.5em;
+            }
+    
+            .cabez p {
+                font-size: 1em;
+            }
+    
+            .cabez .btn {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+    
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+    
+            .product {
+                width: calc(100% - 40px); /* Ajustar el tamaño según sea necesario */
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .cabez {
+                width: 95.5%;
+                padding: 40px 10px;
+            }
+
+    
+            .cabez h2 {
+                font-size: 2em;
+                color: #f7aa03;
+            }
+    
+            .cabez p {
+                font-size: 0.9em;
+                color: black;
+            }
+    
+            .cabez .btn {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+    
+            .container {
+                width: 100%;
+                padding: 5px;
+            }
+            .container h2{
+                font-size: 33px;
+            }
+    
+            .product {
+                width: calc(100% - 80px); /* Ajustar el tamaño según sea necesario */
+                padding: 10px;
+            }
+    
+            .product img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 5px;
+            }
+    
+            .product h3 {
+                font-size: 1.2em;
+                margin-bottom: 5px;
+            }
+    
+            .product p {
+                font-size: 1em;
+                margin-bottom: 5px;
+            }
+    
+            .product .btn {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+            
+        }
+    /*********************galeria****************************/
+    .flex-container {
+        background-color: #c9bfc2;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 1px solid silver; 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  
+    .flex-item {
+        background: rgb(58, 57, 57);
+        padding: 5px;
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    }
+
+    .flex-item:hover {
+        background-color: #5f3d4e; /* Fondo rosa bonito */
+        transform: scale(1.05); /* Aumentar el tamaño ligeramente */
+    }
+
+    .flex-item img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .flex-item .details {
+        padding: 10px 0;
+    }
+
+    .flex-item .details h3 {
+        margin: 10px 0 5px;
+        font-size: 1.2em;
+    }
+
+    .flex-item .details p {
+        margin: 5px 0;
+        font-size: 1.1em;
+    }
+
+    .flex-item .btn {
+        display: inline-block;
+        background-color: #c09e08;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+
+    .flex-item .btn:hover {
+        background-color: #5c592b;
+    }
+  /* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+  @media (max-width: 600px) {
+       .product{
+        width: 260px;
+       } 
+    
+  }
+  </style>
+  <body>
+
+    <section class="cabez">
+        <div class="container">
+            <h2>¡Encuentra tus zapatillas perfectas! <style> .container h2{color: #946b13;}</style></h2>
+            <p>Explora nuestra colección exclusiva de zapatillas.</p>
+            <a href="#productos" class="btn">Ver productos</a>
+        </div>
+    </section>
+
+    <section id="productos" class="productss">
+        <div class="container">
+            <h2>Productos destacados</h2>
+            <div class="product">
+                <img src="img/zapacasual.jpg" alt="Zapatilla 1" width="500">
+                <h3>Zapatilla de Running</h3>
+                <p>$99.99</p>
+                <a href="#" class="btn">Comprar ahora</a>
+            </div>
+            <div class="product">
+                <img src="img/zapadepor.jpg" alt="Zapatilla 2" width="500">
+                <h3>Zapatilla Casual</h3>
+                <p>$79.99</p>
+                <a href="#" class="btn">Comprar ahora</a>
+            </div>
+            
+            <!-- Agrega más productos aquí -->
+        </div>
+    </section>
+
+    <h3>ZAPATILLLAS EN OFERTA</h3>
+    <ul class="flex-container wrap">
+        <li class="flex-item">
+            <img src="img/deprotivas.jpg" width="150" height="190">
+            <div class="details">
+                <h3>Zapatilla Deportiva</h3>
+                <p>$99.99</p>
+                <a href="#" class="btn">Comprar ahora</a>
+            </div>
+        </li>
+        <li class="flex-item">
+            <img src="img/zapatilla3.jpg" width="150" height="190">
+            <div class="details">
+                <h3>Zapatilla Casual</h3>
+                <p>$79.99</p>
+                <a href="#" class="btn">Comprar ahora</a>
+            </div>
+        </li>
+        <li class="flex-item">
+            <img src="img/zapatilla4.jpg" width="150" height="190">
+            <div class="details">
+                <h3>Zapatilla Casual</h3>
+                <p>$79.99</p>
+                <a href="#" class="btn">Comprar ahora</a>
+            </div>
+        </li>
+    </ul>
+
+      
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        background-color: rgb(235, 138, 11);
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;/*el cajon biene abajo*/
+    }
+    .contenido{
+        width: 100%;
+        height: 500px;/*queremos que la altura sea estable*/
+        color: aliceblue;
+        margin: 0 auto;/*centramos el cponytenido de todo el main*/
+       
+    }
+    .noticias{
+        width: 100%;/*para que se adapte ala pantalla*/
+        background-color: brown;
+        text-align: center;
+    }
+    .novedades{
+        width: 100%;
+        background-color: blueviolet;
+        text-align: center;
+        text-align: center;
+    }
+    .pie{
+        width: 100%;
+        background-color: aqua;
+    }
+    @media screen and (min-width: 1024px){/*cuandoa pantalla se va reduciendo a 1024 se aplica los siguientes*/
+        .modificador{width:1000px;}
+        .noticias{width:70%;
+             margin-left: 10px;}
+        .novedades{
+        width:29%;
+     
+        background-color: brown;}
+
+
+    }
+
+</style>
+<body>
+    <main class="contenido flex">
+        <aside class="novedades">
+            <h2>novedades</h2>
+        </aside>
+        <section class="noticias">
+            <h2>noticias</h2>
+        </section>
+    </main>
+</body>
+</html>

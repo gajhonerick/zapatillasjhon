@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.modificador{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cabeza{
+    
+    width: 100%;
+    background-color: rgb(250, 247, 247);
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+.cabeza h2{
+    padding-top: 20px;
+    color: rgb(10, 10, 10);
+    text-align: left;
+}
+.menu{
+    width: 100%;
+    background: rgb(19, 18, 18);
+    display: flex;
+    justify-content: left;
+   /* border-bottom: 2px solid red;*/
+   /* margin-bottom: 5px;*/
+    
+}
+
+.contenido{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.pie{
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    color: rgb(253, 251, 251);
+    display: flex;
+    justify-content: center;
+
+}
+.recuperar{
+    clear: initial;
+}
+.noticias{
+    width: 100%;
+    background-color: rgb(252, 249, 249);
+    text-align: center;
+    background-color: #a0a16a;
+    /*background-image: linear-gradient(to right, black, gold);;*/
+}
+.novedades{
+    width: 100%;
+    background-color: rgb(150, 140, 57);
+    text-align: center;
+    
+}
+.novedades h2{
+    border-bottom: 1px solid rgb(7, 7, 7);
+}
+/*****************************************/
+.menu ul li{
+    display: inline-block;/*se pone en linea los itens */
+    line-height: 48px;/*tamño eñ interlieadosireve para disminuir la pantalla*/
+    margin: 0 5px;
+    
+}
+.menu ul li a{
+    color: rgb(252, 252, 248);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;/*pone en mayuscula*/
+    text-decoration: none;
+}
+/*.novedades li a.active, .novedades li a:hover{
+}*/
+.menu ul li:hover{
+    background-color: rgb(240, 196, 4);
+
+}
+.menu ul li a:hover{/*efecto cuando pasa el mause*/
+    transition: .5s;/*trancision*/
+    color: rgb(7, 7, 7);
+}
+/**************************************************************************************/
+.nove ul{
+    padding: 5px;
+}
+.nove ul li{
+    display: block;/*se pone en linea los itens */
+    line-height: 30px;/*tamño eñ interlieado*//*sireve para disminuir la pantalla*/
+    margin: 6px 0px;   
+    
+    
+}
+.nove ul li a{
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    padding: 12px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;/*pone en mayuscula*/
+    text-decoration: none;
+}
+.nove ul li:hover{/*efecto cuando pasa el mause*/
+    transition: .3s;/*trancision*/
+    color: blanchedalmond;
+    border: 1px solid rgb(243, 238, 238);
+}
+@media screen and (min-width: 1024px){
+    .modificador{ width: 100%;   }
+    .cabeza h2{
+        margin-left: 12%;
+        padding-top: 20px;
+        color: rgb(10, 10, 10);
+        text-align: left;
+    }
+    .menu{
+        display: flex;
+        justify-content: left;
+    }
+    .noticias{width: 80%;
+    margin-right: 10px;
+}
+    .novedades{
+        width: 19%; 
+        background-color: rgb(247, 244, 109);
+    }
+}
+
+
+/**************************************************************************************************
+.menu{
+    background: #043d5e;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu li a.active, .menu li a:hover{
+    background: #000090;
+    transition: .5s;
+}*/
+  .checkbtn {
+            display: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            margin: 8px;
+        }
+        .checkbtn:hover{
+            color: rgb(196, 178, 20);
+        }
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            
+            .menu ul {
+                flex-direction: column;
+                position: absolute;
+                top: 168px;
+                left: 0;
+                right: 0px;
+                background-color: #333;
+                max-height: 0;
+                overflow: hidden;
+               
+            }
+
+            .menu ul li {
+                border-top: 1px solid rgb(243, 243, 239); ;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+
+            .menu input:checked ~ ul {
+                max-height: 300px; /* Ajustar según la cantidad de elementos en el menú */
+            }
+
+            .checkbtn {
+                display: block;
+            }
+        }
+/*****************carrusel   img********************************************************/
+@media (max-width: 480px) {
+    .noticias h1{
+        font-size: 18px;
+    }
+    .cabeza h2{
+        font-size: 20px;
+    }
+}
+.contenedor-slider
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;/*aplica espacios entre conponentes*/
+    /*max-width: 1200px;*/
+    padding: 0px 10px;
+    
+}
+.slider-izquierdo,.slider-derecho
+{
+  width: 4%;
+   
+}
+.slider-izquierdo img, .slider-derecho img
+{
+    width: 50%;
+   cursor: pointer;
+    position: relative;
+    color: black;
+
+}
+.slider-screen
+{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.slider-screen img
+{
+    width: 100%;
+}
+/****************************************************/
+.slider-derecho img:hover{filter: saturate(180%); transform: scale(1.1);}
+.slider-izquierdo img:hover{filter: saturate(180%);transform: scale(1.1);}
+/************************
+6 TOMA DE DECICIONES ,7 TECNICAS DE CREATIVIDAD
+CARATULA =INTEGRANTES TEMA UNIDAD DIDACTICA
+PRESENTACION= SOBRE EL TRABAJO
+INDICE=
+TITULO DEL TEMA=CONTENIDO
+CONCLUSIONES=
+REFENCIAS BIBLIOGRAFICAS=
+ENLACE DE VIDEO = ULTIMA HOJA
+NUMERACION =TITULO DEL TEMA LETR=ARIAL TAMAÑO=11 INTERLINEADO=1.5 JUSTIFICADO
+DIAPOSITIVAS
+EDICION=SECION DE APRENDIZAJE
+MATERIAL DIGITAL=VIDEO TUTORIAL
+*************************************/
+/*L3 M3 5 DE JULIO 7
+
+MARTES 9 JULIO
+16 JULIO EXAMEN*/
+
+
+/*EN CUADERNO MATRIZ DE CONSISTENCIA= DEL PERFIL DE PROYECTO O PROYECTO****/
+
+
+/**
+PALNTEMIENTO DEL PROBLEMA 
+OBJETIVOS
+DELIMITACION
+ANTECENTES UNO DE CADA UNO
+MARCO TEORICO RESUYMIDO
+PLAN DE APLICACION
+METODOLOGIA
+CRONOGRAMA DE ACTIVIDADES
+POLACION Y MUESTRA
+COSTO FINAL
+
+***/

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_cargar.png" type="image/png" sizes="10x10">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css99.css">
+    <!--<link rel="stylesheet" href="menu.css">-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+        $('#p1').click(function(){
+        $('#contenido').load("inicio.html");
+    });
+
+        $('#p2').click(function(){
+        $('#contenido').load("nosotros.html");
+    });
+        $('#p3').click(function(){
+        $('#contenido').load("flex.html");
+    });
+    $('#p4').click(function(){
+        $('#contenido').load("contactos.html");
+    });
+    $('#p11').click(function(){
+        $('#contenido').load("inicio.html");
+    });
+         $('#p13').click(function(){
+        $('#contenido').load("zapatillash.html");
+    });
+    $('#p14').click(function(){
+        $('#contenido').load("zapatillasm.html");
+    });
+    $('#p15').click(function(){
+        $('#contenido').load("ninos.html");
+    });
+    
+});
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="cabeza flex modificador">
+        <img src="img/Logo_principal.png" alt="" width="170">
+        <h2>!LO MEJOR DE LAS ZAPATILLAS¡</h2>
+    </header>
+    <nav class="menu flex modificador">
+        
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            </label>
+         
+            <ul>
+                <li><a href="#" id="p1">Inicio</a></li> 
+                <li><a href="#" id="p2">Nosotros</a></li> 
+                <li><a href="#" id="p4">Contactos</a></li> 
+            </ul>
+       
+    </nav>
+    <main class="contenido flex modificador" >
+        <section class="noticias" id="contenido">
+            <h1>LO MEJOR DE LAS ZAPATILLAS LO ENCUENTRAS AQUI</h1>
+            <div class="contenedor-slider">
+                <!-- boton izquierdo-->
+                <div class="slider-izquierdo">
+                    <h1></h1>
+                    <img src="img/fi1.png" alt="">
+                    
+                </div>
+                <!-- contenedor de todas las imagenes-->
+                <div class="slider-screen">
+                    <img name="Imagen">
+                </div>
+                <!-- boton derecho-->
+                <div class="slider-derecho">
+                    <img src="img/fd1.png" alt="">
+                </div>
+            </div>
+            <!--probar aqui los dos script efecto.js y efecto2.js-->
+            
+            <!--probar aqui los dos script efecto.js y efecto2.js-->
+            <script src="efecto2.js"></script>
+        </section>
+        <aside class="novedades">
+            <h2>Novedades</h2>
+            <nav class="nove">
+                <ul>
+                    
+                    <li><a href="#" id="p11">EN OFERTA</a></li> 
+                    <li><a href="#" id="p13">ZAPATILLAS HOMBRE</a></li> 
+                    <li><a href="#" id="p14">ZAPATILLAS MUJER</a></li> 
+                    <li><a href="#" id="p15">NIÑOS</a></li> 
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <div class="recuperar"></div>
+    <footer class="pie flex modificador">
+        <h2>Derechos reservados </h2>
+    </footer>
+</div>
+</body>
+<script>
+   
+        document.querySelectorAll('.menu ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('check').checked = false;
+            });
+        });
+    
+</script>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .encabezado {
+            background-color: #fffdfd;
+            color: #0a0a0a;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid rgb(7, 7, 7);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .encabezado h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .divi ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 10px 0 0 0;
+        }
+
+        .divi ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .divi ul li:last-child {
+            margin-right: 0;
+        }
+
+        .divi ul li a {
+            color: #0c0c0c;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .divi ul li a:hover {
+            color: #ffd900;
+        }
+        .principal{
+            padding: 2%;
+        }
+        .contenido {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenido h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .contenido p {
+            line-height: 1.6;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .divi ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .encabezado h1 {
+                font-size: 1.5em;
+            }
+
+            .divi ul li a {
+                font-size: 1em;
+            }
+
+            .contenido {
+                padding: 0px;
+            }
+
+            .contenido h2 {
+                font-size: 1.5em;
+            }
+
+            .contenido p {
+                font-size: 0.9em;
+            }
+        }
+</style>
+</head>
+<body>
+
+    <header class="encadezado">
+        <h1>PPacco-S</h1>
+        <nav class="divi">
+          <ul>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#politica-privacidad">Política de Privacidad</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section id="sobre-nosotros">
+          <div class="contenido">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor velit at nisl ultrices tincidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam qui necessitatibus asperiores quidem corporis voluptates minima nemo, molestiae illum. Iusto accusamus perspiciatis adipisci molestiae mollitia placeat doloribus, tempora sed quis.</p>
+            <!-- Agrega más contenido sobre tu empresa aquí -->
+          </div>
+        </section>
+
+        <section id="politica-privacidad">
+          <div class="contenido">
+            <h2>Política de Privacidad</h2>
+            <p>Nuestra política de privacidad garantiza... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, iusto eveniet aliquid ratione voluptates neque veritatis quidem cumque commodi accusamus facilis deserunt quam quisquam porro maxime illo debitis magni obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga, vero odio nostrum amet corporis unde mayores hic explicabo cumque ad molestiae quia exercitationem non eveniet rerum fugit laboriosam accusamus.</p>
+            <!-- Agrega más detalles sobre la política de privacidad aquí -->
+          </div>
+        </section>
+    </main>
+
+</body>
+</html>
